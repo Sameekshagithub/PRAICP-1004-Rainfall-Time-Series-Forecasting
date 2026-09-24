@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PRAICP-1004 | Rainfall Forecast Dashboard</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌧️</text></svg>">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <span class="brand-icon">🌧️</span>
+      <div>
+        <h1>Rainfall Time Series Forecasting</h1>
+        <p class="subtitle">PRAICP-1004 &middot; Artificial Intelligence Capstone Project &middot; Changi Climate Station</p>
+      </div>
+    </div>
+    <div id="dataRangeBadge" class="badge">Loading data…</div>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- Overview stat cards -->
+  <section class="stats-grid" id="statsGrid">
+    <div class="stat-card">
+      <span class="stat-label">Data Coverage</span>
+      <span class="stat-value" id="statCoverage">—</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-label">Best Forecasting Model</span>
+      <span class="stat-value" id="statBestModel">—</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-label">Best Model RMSE</span>
+      <span class="stat-value" id="statBestRmse">—</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-label">Series Stationarity (ADF)</span>
+      <span class="stat-value" id="statAdf">—</span>
+    </div>
+  </section>
+
+  <!-- Forecast dashboards -->
+  <section class="panel-grid">
+
+    <div class="panel">
+      <h2><span class="panel-icon">☔</span> Total Rainfall Forecast</h2>
+      <p class="panel-desc">Select a month to see the SARIMA and Random Forest forecast of total monthly rainfall.</p>
+      <div class="control-row">
+        <select id="monthSelect"></select>
+        <button id="forecastBtn" class="btn-primary">Get Forecast</button>
+      </div>
+      <div class="result-box" id="rainfallResult">
+        <p class="placeholder">Choose a month and click “Get Forecast”.</p>
+      </div>
+      <div class="chart-wrap">
+        <canvas id="rainfallBarChart" height="180"></canvas>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2><span class="panel-icon">💧</span> Highest Daily Rainfall Forecast</h2>
+      <p class="panel-desc">Select a calendar month to see the expected highest single-day rainfall.</p>
+      <div class="control-row">
+        <select id="calMonthSelect"></select>
+        <button id="maxdayBtn" class="btn-secondary">Get Forecast</button>
+      </div>
+      <div class="result-box" id="maxdayResult">
+        <p class="placeholder">Choose a month and click “Get Forecast”.</p>
+      </div>
+      <div class="chart-wrap">
+        <canvas id="maxdayBarChart" height="180"></canvas>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Charts -->
+  <section class="panel-grid">
+    <div class="panel panel-wide">
+      <h2><span class="panel-icon">📈</span> Historical Rainfall Trend &amp; 1-Year Forecast</h2>
+      <p class="panel-desc">Monthly total rainfall (1982–present) with the next 12-month SARIMA forecast highlighted.</p>
+      <div class="chart-wrap chart-wrap-tall">
+        <canvas id="trendChart"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel-grid">
+    <div class="panel">
+      <h2><span class="panel-icon">📅</span> Average Rainfall by Calendar Month</h2>
+      <div class="chart-wrap">
+        <canvas id="seasonalChart"></canvas>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2><span class="panel-icon">🧮</span> Model Comparison</h2>
+      <p class="panel-desc">Performance on the held-out chronological test period (lower MAE/RMSE and higher R² is better).</p>
+      <div class="table-wrap">
+        <table id="modelTable">
+          <thead>
+            <tr><th>Model</th><th>MAE</th><th>RMSE</th><th>R²</th></tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>PRAICP-1004 &middot; Rainfall Time Series Forecasting &middot; Built with Flask + Chart.js &middot; Data: National Environment Agency (Changi Climate Station)</p>
+</footer>
+
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

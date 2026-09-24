@@ -1,0 +1,3209 @@
+{
+  "generated_at": "2026-09-24 14:03",
+  "data_range": {
+    "start": "January 1982",
+    "end": "June 2020",
+    "n_months": 462
+  },
+  "adf_test": {
+    "statistic": -5.317,
+    "p_value": 1e-05,
+    "is_stationary": true
+  },
+  "model_comparison": {
+    "SARIMA": {
+      "MAE": 69.56,
+      "RMSE": 84.52,
+      "R2": 0.058
+    },
+    "Linear Regression": {
+      "MAE": 68.86,
+      "RMSE": 82.84,
+      "R2": 0.095
+    },
+    "Random Forest": {
+      "MAE": 82.67,
+      "RMSE": 103.4,
+      "R2": -0.41
+    },
+    "Random Forest (Tuned)": {
+      "MAE": 76.24,
+      "RMSE": 95.2,
+      "R2": -0.195
+    }
+  },
+  "best_model": "Linear Regression",
+  "rainfall_forecast": [
+    {
+      "date": "2020-07-01",
+      "label": "July 2020",
+      "month_name": "July",
+      "sarima_mm": 154.3,
+      "sarima_lower_ci": -38.6,
+      "sarima_upper_ci": 347.2,
+      "rf_mm": 172.8,
+      "historical_avg_mm": 146.3
+    },
+    {
+      "date": "2020-08-01",
+      "label": "August 2020",
+      "month_name": "August",
+      "sarima_mm": 151.8,
+      "sarima_lower_ci": -41.8,
+      "sarima_upper_ci": 345.5,
+      "rf_mm": 161.0,
+      "historical_avg_mm": 147.1
+    },
+    {
+      "date": "2020-09-01",
+      "label": "September 2020",
+      "month_name": "September",
+      "sarima_mm": 148.6,
+      "sarima_lower_ci": -45.5,
+      "sarima_upper_ci": 342.7,
+      "rf_mm": 161.9,
+      "historical_avg_mm": 145.7
+    },
+    {
+      "date": "2020-10-01",
+      "label": "October 2020",
+      "month_name": "October",
+      "sarima_mm": 167.2,
+      "sarima_lower_ci": -27.1,
+      "sarima_upper_ci": 361.5,
+      "rf_mm": 157.5,
+      "historical_avg_mm": 161.3
+    },
+    {
+      "date": "2020-11-01",
+      "label": "November 2020",
+      "month_name": "November",
+      "sarima_mm": 255.7,
+      "sarima_lower_ci": 61.3,
+      "sarima_upper_ci": 450.1,
+      "rf_mm": 229.8,
+      "historical_avg_mm": 255.6
+    },
+    {
+      "date": "2020-12-01",
+      "label": "December 2020",
+      "month_name": "December",
+      "sarima_mm": 323.9,
+      "sarima_lower_ci": 129.4,
+      "sarima_upper_ci": 518.4,
+      "rf_mm": 274.1,
+      "historical_avg_mm": 317.6
+    },
+    {
+      "date": "2021-01-01",
+      "label": "January 2021",
+      "month_name": "January",
+      "sarima_mm": 226.6,
+      "sarima_lower_ci": 32.1,
+      "sarima_upper_ci": 421.1,
+      "rf_mm": 168.7,
+      "historical_avg_mm": 226.0
+    },
+    {
+      "date": "2021-02-01",
+      "label": "February 2021",
+      "month_name": "February",
+      "sarima_mm": 106.6,
+      "sarima_lower_ci": -88.0,
+      "sarima_upper_ci": 301.1,
+      "rf_mm": 133.2,
+      "historical_avg_mm": 104.7
+    },
+    {
+      "date": "2021-03-01",
+      "label": "March 2021",
+      "month_name": "March",
+      "sarima_mm": 160.9,
+      "sarima_lower_ci": -33.6,
+      "sarima_upper_ci": 355.4,
+      "rf_mm": 153.4,
+      "historical_avg_mm": 160.3
+    },
+    {
+      "date": "2021-04-01",
+      "label": "April 2021",
+      "month_name": "April",
+      "sarima_mm": 155.9,
+      "sarima_lower_ci": -38.6,
+      "sarima_upper_ci": 350.4,
+      "rf_mm": 156.2,
+      "historical_avg_mm": 153.0
+    },
+    {
+      "date": "2021-05-01",
+      "label": "May 2021",
+      "month_name": "May",
+      "sarima_mm": 170.2,
+      "sarima_lower_ci": -24.3,
+      "sarima_upper_ci": 364.7,
+      "rf_mm": 155.8,
+      "historical_avg_mm": 165.8
+    },
+    {
+      "date": "2021-06-01",
+      "label": "June 2021",
+      "month_name": "June",
+      "sarima_mm": 138.7,
+      "sarima_lower_ci": -55.8,
+      "sarima_upper_ci": 333.2,
+      "rf_mm": 154.0,
+      "historical_avg_mm": 134.3
+    }
+  ],
+  "maxday_forecast_metrics": {
+    "MAE": 26.8,
+    "RMSE": 32.64,
+    "R2": -1.703
+  },
+  "maxday_by_month": {
+    "January": {
+      "historical_avg_mm": 74.5,
+      "historical_max_mm": 216.2,
+      "historical_min_mm": 13.9,
+      "forecast_mm": 38.8,
+      "forecast_label": "January 2021"
+    },
+    "February": {
+      "historical_avg_mm": 38.7,
+      "historical_max_mm": 159.3,
+      "historical_min_mm": 0.2,
+      "forecast_mm": 32.4,
+      "forecast_label": "February 2021"
+    },
+    "March": {
+      "historical_avg_mm": 47.6,
+      "historical_max_mm": 122.8,
+      "historical_min_mm": 2.4,
+      "forecast_mm": 38.3,
+      "forecast_label": "March 2021"
+    },
+    "April": {
+      "historical_avg_mm": 45.7,
+      "historical_max_mm": 102.4,
+      "historical_min_mm": 12.0,
+      "forecast_mm": 39.1,
+      "forecast_label": "April 2021"
+    },
+    "May": {
+      "historical_avg_mm": 48.5,
+      "historical_max_mm": 153.7,
+      "historical_min_mm": 13.7,
+      "forecast_mm": 39.1,
+      "forecast_label": "May 2021"
+    },
+    "June": {
+      "historical_avg_mm": 43.6,
+      "historical_max_mm": 121.1,
+      "historical_min_mm": 5.8,
+      "forecast_mm": 40.2,
+      "forecast_label": "June 2021"
+    },
+    "July": {
+      "historical_avg_mm": 40.5,
+      "historical_max_mm": 121.1,
+      "historical_min_mm": 5.4,
+      "forecast_mm": 41.9,
+      "forecast_label": "July 2020"
+    },
+    "August": {
+      "historical_avg_mm": 49.2,
+      "historical_max_mm": 181.8,
+      "historical_min_mm": 3.8,
+      "forecast_mm": 42.2,
+      "forecast_label": "August 2020"
+    },
+    "September": {
+      "historical_avg_mm": 45.1,
+      "historical_max_mm": 187.3,
+      "historical_min_mm": 5.7,
+      "forecast_mm": 52.6,
+      "forecast_label": "September 2020"
+    },
+    "October": {
+      "historical_avg_mm": 44.1,
+      "historical_max_mm": 139.8,
+      "historical_min_mm": 3.2,
+      "forecast_mm": 38.9,
+      "forecast_label": "October 2020"
+    },
+    "November": {
+      "historical_avg_mm": 70.8,
+      "historical_max_mm": 198.6,
+      "historical_min_mm": 20.6,
+      "forecast_mm": 54.6,
+      "forecast_label": "November 2020"
+    },
+    "December": {
+      "historical_avg_mm": 80.5,
+      "historical_max_mm": 211.1,
+      "historical_min_mm": 22.0,
+      "forecast_mm": 62.6,
+      "forecast_label": "December 2020"
+    }
+  },
+  "seasonal_avg_by_month": {
+    "January": 226.0,
+    "February": 104.7,
+    "March": 160.3,
+    "April": 153.0,
+    "May": 165.8,
+    "June": 134.3,
+    "July": 146.3,
+    "August": 147.1,
+    "September": 145.7,
+    "October": 161.4,
+    "November": 255.6,
+    "December": 317.6
+  },
+  "yearly_totals": [
+    {
+      "year": 1982,
+      "total_rainfall": 1581.7
+    },
+    {
+      "year": 1983,
+      "total_rainfall": 1993.7
+    },
+    {
+      "year": 1984,
+      "total_rainfall": 2686.7
+    },
+    {
+      "year": 1985,
+      "total_rainfall": 1483.9
+    },
+    {
+      "year": 1986,
+      "total_rainfall": 2536.1
+    },
+    {
+      "year": 1987,
+      "total_rainfall": 2102.8
+    },
+    {
+      "year": 1988,
+      "total_rainfall": 2598.6
+    },
+    {
+      "year": 1989,
+      "total_rainfall": 2463.2
+    },
+    {
+      "year": 1990,
+      "total_rainfall": 1523.8
+    },
+    {
+      "year": 1991,
+      "total_rainfall": 1877.0
+    },
+    {
+      "year": 1992,
+      "total_rainfall": 2260.8
+    },
+    {
+      "year": 1993,
+      "total_rainfall": 2168.7
+    },
+    {
+      "year": 1994,
+      "total_rainfall": 1941.8
+    },
+    {
+      "year": 1995,
+      "total_rainfall": 2332.6
+    },
+    {
+      "year": 1996,
+      "total_rainfall": 2418.0
+    },
+    {
+      "year": 1997,
+      "total_rainfall": 1118.9
+    },
+    {
+      "year": 1998,
+      "total_rainfall": 2623.1
+    },
+    {
+      "year": 1999,
+      "total_rainfall": 2134.0
+    },
+    {
+      "year": 2000,
+      "total_rainfall": 2370.5
+    },
+    {
+      "year": 2001,
+      "total_rainfall": 2783.1
+    },
+    {
+      "year": 2002,
+      "total_rainfall": 1748.9
+    },
+    {
+      "year": 2003,
+      "total_rainfall": 2391.2
+    },
+    {
+      "year": 2004,
+      "total_rainfall": 2136.4
+    },
+    {
+      "year": 2005,
+      "total_rainfall": 1930.7
+    },
+    {
+      "year": 2006,
+      "total_rainfall": 2753.2
+    },
+    {
+      "year": 2007,
+      "total_rainfall": 2886.2
+    },
+    {
+      "year": 2008,
+      "total_rainfall": 2325.1
+    },
+    {
+      "year": 2009,
+      "total_rainfall": 1920.9
+    },
+    {
+      "year": 2010,
+      "total_rainfall": 2075.1
+    },
+    {
+      "year": 2011,
+      "total_rainfall": 2524.2
+    },
+    {
+      "year": 2012,
+      "total_rainfall": 2159.9
+    },
+    {
+      "year": 2013,
+      "total_rainfall": 2748.4
+    },
+    {
+      "year": 2014,
+      "total_rainfall": 1538.4
+    },
+    {
+      "year": 2015,
+      "total_rainfall": 1267.1
+    },
+    {
+      "year": 2016,
+      "total_rainfall": 1955.7
+    },
+    {
+      "year": 2017,
+      "total_rainfall": 2045.6
+    },
+    {
+      "year": 2018,
+      "total_rainfall": 1708.2
+    },
+    {
+      "year": 2019,
+      "total_rainfall": 1367.5
+    },
+    {
+      "year": 2020,
+      "total_rainfall": 939.6
+    }
+  ],
+  "history": [
+    {
+      "date": "1982-01-01",
+      "total_rainfall": 107.1,
+      "max_rainfall_in_a_day": 36.5,
+      "rainy_days": 10
+    },
+    {
+      "date": "1982-02-01",
+      "total_rainfall": 27.8,
+      "max_rainfall_in_a_day": 9.4,
+      "rainy_days": 5
+    },
+    {
+      "date": "1982-03-01",
+      "total_rainfall": 160.8,
+      "max_rainfall_in_a_day": 61.7,
+      "rainy_days": 11
+    },
+    {
+      "date": "1982-04-01",
+      "total_rainfall": 157.0,
+      "max_rainfall_in_a_day": 45.1,
+      "rainy_days": 14
+    },
+    {
+      "date": "1982-05-01",
+      "total_rainfall": 102.2,
+      "max_rainfall_in_a_day": 33.0,
+      "rainy_days": 10
+    },
+    {
+      "date": "1982-06-01",
+      "total_rainfall": 59.5,
+      "max_rainfall_in_a_day": 20.6,
+      "rainy_days": 8
+    },
+    {
+      "date": "1982-07-01",
+      "total_rainfall": 76.3,
+      "max_rainfall_in_a_day": 17.2,
+      "rainy_days": 8
+    },
+    {
+      "date": "1982-08-01",
+      "total_rainfall": 169.5,
+      "max_rainfall_in_a_day": 57.7,
+      "rainy_days": 11
+    },
+    {
+      "date": "1982-09-01",
+      "total_rainfall": 54.1,
+      "max_rainfall_in_a_day": 18.0,
+      "rainy_days": 9
+    },
+    {
+      "date": "1982-10-01",
+      "total_rainfall": 39.3,
+      "max_rainfall_in_a_day": 10.0,
+      "rainy_days": 10
+    },
+    {
+      "date": "1982-11-01",
+      "total_rainfall": 134.0,
+      "max_rainfall_in_a_day": 39.6,
+      "rainy_days": 13
+    },
+    {
+      "date": "1982-12-01",
+      "total_rainfall": 494.1,
+      "max_rainfall_in_a_day": 109.0,
+      "rainy_days": 21
+    },
+    {
+      "date": "1983-01-01",
+      "total_rainfall": 246.0,
+      "max_rainfall_in_a_day": 43.2,
+      "rainy_days": 18
+    },
+    {
+      "date": "1983-02-01",
+      "total_rainfall": 5.6,
+      "max_rainfall_in_a_day": 5.1,
+      "rainy_days": 2
+    },
+    {
+      "date": "1983-03-01",
+      "total_rainfall": 18.6,
+      "max_rainfall_in_a_day": 18.3,
+      "rainy_days": 2
+    },
+    {
+      "date": "1983-04-01",
+      "total_rainfall": 33.6,
+      "max_rainfall_in_a_day": 21.3,
+      "rainy_days": 4
+    },
+    {
+      "date": "1983-05-01",
+      "total_rainfall": 160.8,
+      "max_rainfall_in_a_day": 32.3,
+      "rainy_days": 11
+    },
+    {
+      "date": "1983-06-01",
+      "total_rainfall": 94.0,
+      "max_rainfall_in_a_day": 27.7,
+      "rainy_days": 11
+    },
+    {
+      "date": "1983-07-01",
+      "total_rainfall": 190.0,
+      "max_rainfall_in_a_day": 55.5,
+      "rainy_days": 18
+    },
+    {
+      "date": "1983-08-01",
+      "total_rainfall": 262.2,
+      "max_rainfall_in_a_day": 181.8,
+      "rainy_days": 10
+    },
+    {
+      "date": "1983-09-01",
+      "total_rainfall": 170.8,
+      "max_rainfall_in_a_day": 50.3,
+      "rainy_days": 18
+    },
+    {
+      "date": "1983-10-01",
+      "total_rainfall": 212.7,
+      "max_rainfall_in_a_day": 40.0,
+      "rainy_days": 17
+    },
+    {
+      "date": "1983-11-01",
+      "total_rainfall": 228.8,
+      "max_rainfall_in_a_day": 54.8,
+      "rainy_days": 18
+    },
+    {
+      "date": "1983-12-01",
+      "total_rainfall": 370.6,
+      "max_rainfall_in_a_day": 164.4,
+      "rainy_days": 16
+    },
+    {
+      "date": "1984-01-01",
+      "total_rainfall": 251.2,
+      "max_rainfall_in_a_day": 62.3,
+      "rainy_days": 18
+    },
+    {
+      "date": "1984-02-01",
+      "total_rainfall": 470.4,
+      "max_rainfall_in_a_day": 154.4,
+      "rainy_days": 19
+    },
+    {
+      "date": "1984-03-01",
+      "total_rainfall": 361.3,
+      "max_rainfall_in_a_day": 119.4,
+      "rainy_days": 19
+    },
+    {
+      "date": "1984-04-01",
+      "total_rainfall": 153.1,
+      "max_rainfall_in_a_day": 38.7,
+      "rainy_days": 17
+    },
+    {
+      "date": "1984-05-01",
+      "total_rainfall": 186.5,
+      "max_rainfall_in_a_day": 46.0,
+      "rainy_days": 12
+    },
+    {
+      "date": "1984-06-01",
+      "total_rainfall": 255.0,
+      "max_rainfall_in_a_day": 121.1,
+      "rainy_days": 14
+    },
+    {
+      "date": "1984-07-01",
+      "total_rainfall": 127.2,
+      "max_rainfall_in_a_day": 49.2,
+      "rainy_days": 12
+    },
+    {
+      "date": "1984-08-01",
+      "total_rainfall": 102.7,
+      "max_rainfall_in_a_day": 22.5,
+      "rainy_days": 13
+    },
+    {
+      "date": "1984-09-01",
+      "total_rainfall": 186.7,
+      "max_rainfall_in_a_day": 46.5,
+      "rainy_days": 17
+    },
+    {
+      "date": "1984-10-01",
+      "total_rainfall": 187.5,
+      "max_rainfall_in_a_day": 47.2,
+      "rainy_days": 11
+    },
+    {
+      "date": "1984-11-01",
+      "total_rainfall": 127.7,
+      "max_rainfall_in_a_day": 35.4,
+      "rainy_days": 17
+    },
+    {
+      "date": "1984-12-01",
+      "total_rainfall": 277.4,
+      "max_rainfall_in_a_day": 58.4,
+      "rainy_days": 22
+    },
+    {
+      "date": "1985-01-01",
+      "total_rainfall": 111.1,
+      "max_rainfall_in_a_day": 35.5,
+      "rainy_days": 7
+    },
+    {
+      "date": "1985-02-01",
+      "total_rainfall": 79.3,
+      "max_rainfall_in_a_day": 18.7,
+      "rainy_days": 11
+    },
+    {
+      "date": "1985-03-01",
+      "total_rainfall": 88.0,
+      "max_rainfall_in_a_day": 23.8,
+      "rainy_days": 13
+    },
+    {
+      "date": "1985-04-01",
+      "total_rainfall": 110.5,
+      "max_rainfall_in_a_day": 29.3,
+      "rainy_days": 14
+    },
+    {
+      "date": "1985-05-01",
+      "total_rainfall": 70.1,
+      "max_rainfall_in_a_day": 36.2,
+      "rainy_days": 12
+    },
+    {
+      "date": "1985-06-01",
+      "total_rainfall": 37.0,
+      "max_rainfall_in_a_day": 9.9,
+      "rainy_days": 14
+    },
+    {
+      "date": "1985-07-01",
+      "total_rainfall": 131.8,
+      "max_rainfall_in_a_day": 32.2,
+      "rainy_days": 17
+    },
+    {
+      "date": "1985-08-01",
+      "total_rainfall": 56.9,
+      "max_rainfall_in_a_day": 21.4,
+      "rainy_days": 11
+    },
+    {
+      "date": "1985-09-01",
+      "total_rainfall": 110.7,
+      "max_rainfall_in_a_day": 22.0,
+      "rainy_days": 18
+    },
+    {
+      "date": "1985-10-01",
+      "total_rainfall": 169.0,
+      "max_rainfall_in_a_day": 30.2,
+      "rainy_days": 21
+    },
+    {
+      "date": "1985-11-01",
+      "total_rainfall": 179.4,
+      "max_rainfall_in_a_day": 38.2,
+      "rainy_days": 21
+    },
+    {
+      "date": "1985-12-01",
+      "total_rainfall": 340.1,
+      "max_rainfall_in_a_day": 86.8,
+      "rainy_days": 22
+    },
+    {
+      "date": "1986-01-01",
+      "total_rainfall": 308.2,
+      "max_rainfall_in_a_day": 95.6,
+      "rainy_days": 13
+    },
+    {
+      "date": "1986-02-01",
+      "total_rainfall": 26.7,
+      "max_rainfall_in_a_day": 23.0,
+      "rainy_days": 2
+    },
+    {
+      "date": "1986-03-01",
+      "total_rainfall": 353.4,
+      "max_rainfall_in_a_day": 71.1,
+      "rainy_days": 17
+    },
+    {
+      "date": "1986-04-01",
+      "total_rainfall": 150.0,
+      "max_rainfall_in_a_day": 56.4,
+      "rainy_days": 14
+    },
+    {
+      "date": "1986-05-01",
+      "total_rainfall": 145.1,
+      "max_rainfall_in_a_day": 51.3,
+      "rainy_days": 13
+    },
+    {
+      "date": "1986-06-01",
+      "total_rainfall": 122.9,
+      "max_rainfall_in_a_day": 34.5,
+      "rainy_days": 13
+    },
+    {
+      "date": "1986-07-01",
+      "total_rainfall": 109.7,
+      "max_rainfall_in_a_day": 23.5,
+      "rainy_days": 12
+    },
+    {
+      "date": "1986-08-01",
+      "total_rainfall": 72.9,
+      "max_rainfall_in_a_day": 28.4,
+      "rainy_days": 11
+    },
+    {
+      "date": "1986-09-01",
+      "total_rainfall": 396.0,
+      "max_rainfall_in_a_day": 97.6,
+      "rainy_days": 22
+    },
+    {
+      "date": "1986-10-01",
+      "total_rainfall": 227.3,
+      "max_rainfall_in_a_day": 65.6,
+      "rainy_days": 20
+    },
+    {
+      "date": "1986-11-01",
+      "total_rainfall": 256.7,
+      "max_rainfall_in_a_day": 40.5,
+      "rainy_days": 21
+    },
+    {
+      "date": "1986-12-01",
+      "total_rainfall": 367.2,
+      "max_rainfall_in_a_day": 131.7,
+      "rainy_days": 16
+    },
+    {
+      "date": "1987-01-01",
+      "total_rainfall": 568.6,
+      "max_rainfall_in_a_day": 127.4,
+      "rainy_days": 16
+    },
+    {
+      "date": "1987-02-01",
+      "total_rainfall": 86.9,
+      "max_rainfall_in_a_day": 34.8,
+      "rainy_days": 7
+    },
+    {
+      "date": "1987-03-01",
+      "total_rainfall": 132.5,
+      "max_rainfall_in_a_day": 40.9,
+      "rainy_days": 12
+    },
+    {
+      "date": "1987-04-01",
+      "total_rainfall": 72.5,
+      "max_rainfall_in_a_day": 27.7,
+      "rainy_days": 10
+    },
+    {
+      "date": "1987-05-01",
+      "total_rainfall": 270.0,
+      "max_rainfall_in_a_day": 81.4,
+      "rainy_days": 16
+    },
+    {
+      "date": "1987-06-01",
+      "total_rainfall": 126.6,
+      "max_rainfall_in_a_day": 30.7,
+      "rainy_days": 15
+    },
+    {
+      "date": "1987-07-01",
+      "total_rainfall": 80.9,
+      "max_rainfall_in_a_day": 21.6,
+      "rainy_days": 11
+    },
+    {
+      "date": "1987-08-01",
+      "total_rainfall": 191.9,
+      "max_rainfall_in_a_day": 48.2,
+      "rainy_days": 16
+    },
+    {
+      "date": "1987-09-01",
+      "total_rainfall": 129.9,
+      "max_rainfall_in_a_day": 44.5,
+      "rainy_days": 11
+    },
+    {
+      "date": "1987-10-01",
+      "total_rainfall": 22.6,
+      "max_rainfall_in_a_day": 5.9,
+      "rainy_days": 9
+    },
+    {
+      "date": "1987-11-01",
+      "total_rainfall": 347.6,
+      "max_rainfall_in_a_day": 77.7,
+      "rainy_days": 17
+    },
+    {
+      "date": "1987-12-01",
+      "total_rainfall": 72.8,
+      "max_rainfall_in_a_day": 24.3,
+      "rainy_days": 11
+    },
+    {
+      "date": "1988-01-01",
+      "total_rainfall": 237.5,
+      "max_rainfall_in_a_day": 69.0,
+      "rainy_days": 15
+    },
+    {
+      "date": "1988-02-01",
+      "total_rainfall": 158.1,
+      "max_rainfall_in_a_day": 46.7,
+      "rainy_days": 9
+    },
+    {
+      "date": "1988-03-01",
+      "total_rainfall": 186.8,
+      "max_rainfall_in_a_day": 70.1,
+      "rainy_days": 15
+    },
+    {
+      "date": "1988-04-01",
+      "total_rainfall": 109.6,
+      "max_rainfall_in_a_day": 22.8,
+      "rainy_days": 13
+    },
+    {
+      "date": "1988-05-01",
+      "total_rainfall": 229.6,
+      "max_rainfall_in_a_day": 76.7,
+      "rainy_days": 14
+    },
+    {
+      "date": "1988-06-01",
+      "total_rainfall": 252.2,
+      "max_rainfall_in_a_day": 69.4,
+      "rainy_days": 13
+    },
+    {
+      "date": "1988-07-01",
+      "total_rainfall": 305.4,
+      "max_rainfall_in_a_day": 75.6,
+      "rainy_days": 15
+    },
+    {
+      "date": "1988-08-01",
+      "total_rainfall": 80.1,
+      "max_rainfall_in_a_day": 19.0,
+      "rainy_days": 14
+    },
+    {
+      "date": "1988-09-01",
+      "total_rainfall": 440.4,
+      "max_rainfall_in_a_day": 187.3,
+      "rainy_days": 14
+    },
+    {
+      "date": "1988-10-01",
+      "total_rainfall": 134.6,
+      "max_rainfall_in_a_day": 39.8,
+      "rainy_days": 17
+    },
+    {
+      "date": "1988-11-01",
+      "total_rainfall": 401.4,
+      "max_rainfall_in_a_day": 111.9,
+      "rainy_days": 23
+    },
+    {
+      "date": "1988-12-01",
+      "total_rainfall": 62.9,
+      "max_rainfall_in_a_day": 22.0,
+      "rainy_days": 11
+    },
+    {
+      "date": "1989-01-01",
+      "total_rainfall": 189.7,
+      "max_rainfall_in_a_day": 53.0,
+      "rainy_days": 10
+    },
+    {
+      "date": "1989-02-01",
+      "total_rainfall": 52.4,
+      "max_rainfall_in_a_day": 48.4,
+      "rainy_days": 3
+    },
+    {
+      "date": "1989-03-01",
+      "total_rainfall": 305.9,
+      "max_rainfall_in_a_day": 63.5,
+      "rainy_days": 21
+    },
+    {
+      "date": "1989-04-01",
+      "total_rainfall": 198.6,
+      "max_rainfall_in_a_day": 39.0,
+      "rainy_days": 17
+    },
+    {
+      "date": "1989-05-01",
+      "total_rainfall": 194.0,
+      "max_rainfall_in_a_day": 38.2,
+      "rainy_days": 12
+    },
+    {
+      "date": "1989-06-01",
+      "total_rainfall": 117.6,
+      "max_rainfall_in_a_day": 45.9,
+      "rainy_days": 12
+    },
+    {
+      "date": "1989-07-01",
+      "total_rainfall": 157.6,
+      "max_rainfall_in_a_day": 33.3,
+      "rainy_days": 12
+    },
+    {
+      "date": "1989-08-01",
+      "total_rainfall": 201.0,
+      "max_rainfall_in_a_day": 81.4,
+      "rainy_days": 18
+    },
+    {
+      "date": "1989-09-01",
+      "total_rainfall": 247.3,
+      "max_rainfall_in_a_day": 102.2,
+      "rainy_days": 14
+    },
+    {
+      "date": "1989-10-01",
+      "total_rainfall": 111.0,
+      "max_rainfall_in_a_day": 24.9,
+      "rainy_days": 16
+    },
+    {
+      "date": "1989-11-01",
+      "total_rainfall": 508.4,
+      "max_rainfall_in_a_day": 148.6,
+      "rainy_days": 20
+    },
+    {
+      "date": "1989-12-01",
+      "total_rainfall": 179.7,
+      "max_rainfall_in_a_day": 44.2,
+      "rainy_days": 18
+    },
+    {
+      "date": "1990-01-01",
+      "total_rainfall": 147.4,
+      "max_rainfall_in_a_day": 73.9,
+      "rainy_days": 13
+    },
+    {
+      "date": "1990-02-01",
+      "total_rainfall": 24.1,
+      "max_rainfall_in_a_day": 6.6,
+      "rainy_days": 8
+    },
+    {
+      "date": "1990-03-01",
+      "total_rainfall": 94.2,
+      "max_rainfall_in_a_day": 48.6,
+      "rainy_days": 4
+    },
+    {
+      "date": "1990-04-01",
+      "total_rainfall": 52.4,
+      "max_rainfall_in_a_day": 12.0,
+      "rainy_days": 10
+    },
+    {
+      "date": "1990-05-01",
+      "total_rainfall": 180.1,
+      "max_rainfall_in_a_day": 153.7,
+      "rainy_days": 11
+    },
+    {
+      "date": "1990-06-01",
+      "total_rainfall": 112.6,
+      "max_rainfall_in_a_day": 76.1,
+      "rainy_days": 9
+    },
+    {
+      "date": "1990-07-01",
+      "total_rainfall": 124.0,
+      "max_rainfall_in_a_day": 44.5,
+      "rainy_days": 12
+    },
+    {
+      "date": "1990-08-01",
+      "total_rainfall": 146.6,
+      "max_rainfall_in_a_day": 38.3,
+      "rainy_days": 13
+    },
+    {
+      "date": "1990-09-01",
+      "total_rainfall": 204.5,
+      "max_rainfall_in_a_day": 44.5,
+      "rainy_days": 17
+    },
+    {
+      "date": "1990-10-01",
+      "total_rainfall": 56.4,
+      "max_rainfall_in_a_day": 20.2,
+      "rainy_days": 12
+    },
+    {
+      "date": "1990-11-01",
+      "total_rainfall": 180.4,
+      "max_rainfall_in_a_day": 46.9,
+      "rainy_days": 17
+    },
+    {
+      "date": "1990-12-01",
+      "total_rainfall": 201.1,
+      "max_rainfall_in_a_day": 33.5,
+      "rainy_days": 16
+    },
+    {
+      "date": "1991-01-01",
+      "total_rainfall": 123.9,
+      "max_rainfall_in_a_day": 36.2,
+      "rainy_days": 13
+    },
+    {
+      "date": "1991-02-01",
+      "total_rainfall": 45.5,
+      "max_rainfall_in_a_day": 17.9,
+      "rainy_days": 7
+    },
+    {
+      "date": "1991-03-01",
+      "total_rainfall": 92.4,
+      "max_rainfall_in_a_day": 48.6,
+      "rainy_days": 10
+    },
+    {
+      "date": "1991-04-01",
+      "total_rainfall": 134.2,
+      "max_rainfall_in_a_day": 32.2,
+      "rainy_days": 13
+    },
+    {
+      "date": "1991-05-01",
+      "total_rainfall": 256.4,
+      "max_rainfall_in_a_day": 44.0,
+      "rainy_days": 23
+    },
+    {
+      "date": "1991-06-01",
+      "total_rainfall": 88.7,
+      "max_rainfall_in_a_day": 55.6,
+      "rainy_days": 9
+    },
+    {
+      "date": "1991-07-01",
+      "total_rainfall": 37.3,
+      "max_rainfall_in_a_day": 10.7,
+      "rainy_days": 8
+    },
+    {
+      "date": "1991-08-01",
+      "total_rainfall": 226.2,
+      "max_rainfall_in_a_day": 129.9,
+      "rainy_days": 8
+    },
+    {
+      "date": "1991-09-01",
+      "total_rainfall": 123.1,
+      "max_rainfall_in_a_day": 53.6,
+      "rainy_days": 12
+    },
+    {
+      "date": "1991-10-01",
+      "total_rainfall": 52.0,
+      "max_rainfall_in_a_day": 20.4,
+      "rainy_days": 5
+    },
+    {
+      "date": "1991-11-01",
+      "total_rainfall": 205.0,
+      "max_rainfall_in_a_day": 75.2,
+      "rainy_days": 19
+    },
+    {
+      "date": "1991-12-01",
+      "total_rainfall": 492.3,
+      "max_rainfall_in_a_day": 79.4,
+      "rainy_days": 19
+    },
+    {
+      "date": "1992-01-01",
+      "total_rainfall": 83.9,
+      "max_rainfall_in_a_day": 56.2,
+      "rainy_days": 9
+    },
+    {
+      "date": "1992-02-01",
+      "total_rainfall": 62.4,
+      "max_rainfall_in_a_day": 43.2,
+      "rainy_days": 4
+    },
+    {
+      "date": "1992-03-01",
+      "total_rainfall": 67.6,
+      "max_rainfall_in_a_day": 35.1,
+      "rainy_days": 6
+    },
+    {
+      "date": "1992-04-01",
+      "total_rainfall": 160.3,
+      "max_rainfall_in_a_day": 94.7,
+      "rainy_days": 13
+    },
+    {
+      "date": "1992-05-01",
+      "total_rainfall": 63.1,
+      "max_rainfall_in_a_day": 13.7,
+      "rainy_days": 13
+    },
+    {
+      "date": "1992-06-01",
+      "total_rainfall": 162.8,
+      "max_rainfall_in_a_day": 38.4,
+      "rainy_days": 14
+    },
+    {
+      "date": "1992-07-01",
+      "total_rainfall": 290.8,
+      "max_rainfall_in_a_day": 97.3,
+      "rainy_days": 19
+    },
+    {
+      "date": "1992-08-01",
+      "total_rainfall": 76.1,
+      "max_rainfall_in_a_day": 31.0,
+      "rainy_days": 11
+    },
+    {
+      "date": "1992-09-01",
+      "total_rainfall": 83.6,
+      "max_rainfall_in_a_day": 17.5,
+      "rainy_days": 13
+    },
+    {
+      "date": "1992-10-01",
+      "total_rainfall": 233.2,
+      "max_rainfall_in_a_day": 45.5,
+      "rainy_days": 20
+    },
+    {
+      "date": "1992-11-01",
+      "total_rainfall": 474.3,
+      "max_rainfall_in_a_day": 120.6,
+      "rainy_days": 18
+    },
+    {
+      "date": "1992-12-01",
+      "total_rainfall": 502.7,
+      "max_rainfall_in_a_day": 105.7,
+      "rainy_days": 23
+    },
+    {
+      "date": "1993-01-01",
+      "total_rainfall": 176.4,
+      "max_rainfall_in_a_day": 37.2,
+      "rainy_days": 11
+    },
+    {
+      "date": "1993-02-01",
+      "total_rainfall": 69.2,
+      "max_rainfall_in_a_day": 27.0,
+      "rainy_days": 8
+    },
+    {
+      "date": "1993-03-01",
+      "total_rainfall": 250.5,
+      "max_rainfall_in_a_day": 56.9,
+      "rainy_days": 14
+    },
+    {
+      "date": "1993-04-01",
+      "total_rainfall": 283.9,
+      "max_rainfall_in_a_day": 56.7,
+      "rainy_days": 20
+    },
+    {
+      "date": "1993-05-01",
+      "total_rainfall": 129.9,
+      "max_rainfall_in_a_day": 37.2,
+      "rainy_days": 10
+    },
+    {
+      "date": "1993-06-01",
+      "total_rainfall": 115.5,
+      "max_rainfall_in_a_day": 29.4,
+      "rainy_days": 17
+    },
+    {
+      "date": "1993-07-01",
+      "total_rainfall": 240.0,
+      "max_rainfall_in_a_day": 46.4,
+      "rainy_days": 15
+    },
+    {
+      "date": "1993-08-01",
+      "total_rainfall": 106.8,
+      "max_rainfall_in_a_day": 53.5,
+      "rainy_days": 11
+    },
+    {
+      "date": "1993-09-01",
+      "total_rainfall": 61.7,
+      "max_rainfall_in_a_day": 42.0,
+      "rainy_days": 7
+    },
+    {
+      "date": "1993-10-01",
+      "total_rainfall": 175.5,
+      "max_rainfall_in_a_day": 62.7,
+      "rainy_days": 13
+    },
+    {
+      "date": "1993-11-01",
+      "total_rainfall": 250.8,
+      "max_rainfall_in_a_day": 61.3,
+      "rainy_days": 18
+    },
+    {
+      "date": "1993-12-01",
+      "total_rainfall": 308.5,
+      "max_rainfall_in_a_day": 67.6,
+      "rainy_days": 19
+    },
+    {
+      "date": "1994-01-01",
+      "total_rainfall": 56.9,
+      "max_rainfall_in_a_day": 17.5,
+      "rainy_days": 7
+    },
+    {
+      "date": "1994-02-01",
+      "total_rainfall": 133.5,
+      "max_rainfall_in_a_day": 26.3,
+      "rainy_days": 15
+    },
+    {
+      "date": "1994-03-01",
+      "total_rainfall": 288.2,
+      "max_rainfall_in_a_day": 64.2,
+      "rainy_days": 19
+    },
+    {
+      "date": "1994-04-01",
+      "total_rainfall": 154.0,
+      "max_rainfall_in_a_day": 46.3,
+      "rainy_days": 15
+    },
+    {
+      "date": "1994-05-01",
+      "total_rainfall": 169.6,
+      "max_rainfall_in_a_day": 45.1,
+      "rainy_days": 16
+    },
+    {
+      "date": "1994-06-01",
+      "total_rainfall": 184.7,
+      "max_rainfall_in_a_day": 61.1,
+      "rainy_days": 14
+    },
+    {
+      "date": "1994-07-01",
+      "total_rainfall": 53.8,
+      "max_rainfall_in_a_day": 17.0,
+      "rainy_days": 6
+    },
+    {
+      "date": "1994-08-01",
+      "total_rainfall": 45.1,
+      "max_rainfall_in_a_day": 15.5,
+      "rainy_days": 12
+    },
+    {
+      "date": "1994-09-01",
+      "total_rainfall": 23.7,
+      "max_rainfall_in_a_day": 11.3,
+      "rainy_days": 6
+    },
+    {
+      "date": "1994-10-01",
+      "total_rainfall": 84.7,
+      "max_rainfall_in_a_day": 35.4,
+      "rainy_days": 11
+    },
+    {
+      "date": "1994-11-01",
+      "total_rainfall": 322.2,
+      "max_rainfall_in_a_day": 178.3,
+      "rainy_days": 21
+    },
+    {
+      "date": "1994-12-01",
+      "total_rainfall": 425.4,
+      "max_rainfall_in_a_day": 133.8,
+      "rainy_days": 18
+    },
+    {
+      "date": "1995-01-01",
+      "total_rainfall": 349.4,
+      "max_rainfall_in_a_day": 108.3,
+      "rainy_days": 21
+    },
+    {
+      "date": "1995-02-01",
+      "total_rainfall": 334.0,
+      "max_rainfall_in_a_day": 159.3,
+      "rainy_days": 16
+    },
+    {
+      "date": "1995-03-01",
+      "total_rainfall": 67.7,
+      "max_rainfall_in_a_day": 31.1,
+      "rainy_days": 10
+    },
+    {
+      "date": "1995-04-01",
+      "total_rainfall": 242.3,
+      "max_rainfall_in_a_day": 73.6,
+      "rainy_days": 16
+    },
+    {
+      "date": "1995-05-01",
+      "total_rainfall": 84.4,
+      "max_rainfall_in_a_day": 32.8,
+      "rainy_days": 11
+    },
+    {
+      "date": "1995-06-01",
+      "total_rainfall": 63.7,
+      "max_rainfall_in_a_day": 45.0,
+      "rainy_days": 12
+    },
+    {
+      "date": "1995-07-01",
+      "total_rainfall": 173.6,
+      "max_rainfall_in_a_day": 52.3,
+      "rainy_days": 13
+    },
+    {
+      "date": "1995-08-01",
+      "total_rainfall": 211.6,
+      "max_rainfall_in_a_day": 37.9,
+      "rainy_days": 21
+    },
+    {
+      "date": "1995-09-01",
+      "total_rainfall": 29.5,
+      "max_rainfall_in_a_day": 5.7,
+      "rainy_days": 7
+    },
+    {
+      "date": "1995-10-01",
+      "total_rainfall": 101.1,
+      "max_rainfall_in_a_day": 37.1,
+      "rainy_days": 12
+    },
+    {
+      "date": "1995-11-01",
+      "total_rainfall": 372.8,
+      "max_rainfall_in_a_day": 198.6,
+      "rainy_days": 20
+    },
+    {
+      "date": "1995-12-01",
+      "total_rainfall": 302.5,
+      "max_rainfall_in_a_day": 55.6,
+      "rainy_days": 20
+    },
+    {
+      "date": "1996-01-01",
+      "total_rainfall": 173.2,
+      "max_rainfall_in_a_day": 39.0,
+      "rainy_days": 10
+    },
+    {
+      "date": "1996-02-01",
+      "total_rainfall": 180.2,
+      "max_rainfall_in_a_day": 53.0,
+      "rainy_days": 11
+    },
+    {
+      "date": "1996-03-01",
+      "total_rainfall": 129.7,
+      "max_rainfall_in_a_day": 61.8,
+      "rainy_days": 8
+    },
+    {
+      "date": "1996-04-01",
+      "total_rainfall": 178.2,
+      "max_rainfall_in_a_day": 55.7,
+      "rainy_days": 15
+    },
+    {
+      "date": "1996-05-01",
+      "total_rainfall": 107.5,
+      "max_rainfall_in_a_day": 18.6,
+      "rainy_days": 15
+    },
+    {
+      "date": "1996-06-01",
+      "total_rainfall": 265.8,
+      "max_rainfall_in_a_day": 94.3,
+      "rainy_days": 15
+    },
+    {
+      "date": "1996-07-01",
+      "total_rainfall": 162.3,
+      "max_rainfall_in_a_day": 55.3,
+      "rainy_days": 10
+    },
+    {
+      "date": "1996-08-01",
+      "total_rainfall": 258.4,
+      "max_rainfall_in_a_day": 64.6,
+      "rainy_days": 18
+    },
+    {
+      "date": "1996-09-01",
+      "total_rainfall": 297.0,
+      "max_rainfall_in_a_day": 66.5,
+      "rainy_days": 18
+    },
+    {
+      "date": "1996-10-01",
+      "total_rainfall": 300.0,
+      "max_rainfall_in_a_day": 45.8,
+      "rainy_days": 19
+    },
+    {
+      "date": "1996-11-01",
+      "total_rainfall": 180.2,
+      "max_rainfall_in_a_day": 60.5,
+      "rainy_days": 16
+    },
+    {
+      "date": "1996-12-01",
+      "total_rainfall": 185.5,
+      "max_rainfall_in_a_day": 72.4,
+      "rainy_days": 15
+    },
+    {
+      "date": "1997-01-01",
+      "total_rainfall": 15.4,
+      "max_rainfall_in_a_day": 13.9,
+      "rainy_days": 3
+    },
+    {
+      "date": "1997-02-01",
+      "total_rainfall": 105.4,
+      "max_rainfall_in_a_day": 35.7,
+      "rainy_days": 8
+    },
+    {
+      "date": "1997-03-01",
+      "total_rainfall": 34.3,
+      "max_rainfall_in_a_day": 17.4,
+      "rainy_days": 10
+    },
+    {
+      "date": "1997-04-01",
+      "total_rainfall": 118.4,
+      "max_rainfall_in_a_day": 44.6,
+      "rainy_days": 12
+    },
+    {
+      "date": "1997-05-01",
+      "total_rainfall": 41.6,
+      "max_rainfall_in_a_day": 35.6,
+      "rainy_days": 6
+    },
+    {
+      "date": "1997-06-01",
+      "total_rainfall": 78.9,
+      "max_rainfall_in_a_day": 25.0,
+      "rainy_days": 12
+    },
+    {
+      "date": "1997-07-01",
+      "total_rainfall": 18.6,
+      "max_rainfall_in_a_day": 5.4,
+      "rainy_days": 9
+    },
+    {
+      "date": "1997-08-01",
+      "total_rainfall": 86.6,
+      "max_rainfall_in_a_day": 61.4,
+      "rainy_days": 9
+    },
+    {
+      "date": "1997-09-01",
+      "total_rainfall": 31.1,
+      "max_rainfall_in_a_day": 24.3,
+      "rainy_days": 3
+    },
+    {
+      "date": "1997-10-01",
+      "total_rainfall": 78.4,
+      "max_rainfall_in_a_day": 36.5,
+      "rainy_days": 8
+    },
+    {
+      "date": "1997-11-01",
+      "total_rainfall": 158.3,
+      "max_rainfall_in_a_day": 53.6,
+      "rainy_days": 13
+    },
+    {
+      "date": "1997-12-01",
+      "total_rainfall": 351.9,
+      "max_rainfall_in_a_day": 65.8,
+      "rainy_days": 23
+    },
+    {
+      "date": "1998-01-01",
+      "total_rainfall": 268.8,
+      "max_rainfall_in_a_day": 79.7,
+      "rainy_days": 13
+    },
+    {
+      "date": "1998-02-01",
+      "total_rainfall": 32.5,
+      "max_rainfall_in_a_day": 11.9,
+      "rainy_days": 5
+    },
+    {
+      "date": "1998-03-01",
+      "total_rainfall": 58.8,
+      "max_rainfall_in_a_day": 20.9,
+      "rainy_days": 7
+    },
+    {
+      "date": "1998-04-01",
+      "total_rainfall": 187.7,
+      "max_rainfall_in_a_day": 64.9,
+      "rainy_days": 13
+    },
+    {
+      "date": "1998-05-01",
+      "total_rainfall": 370.8,
+      "max_rainfall_in_a_day": 83.7,
+      "rainy_days": 18
+    },
+    {
+      "date": "1998-06-01",
+      "total_rainfall": 198.8,
+      "max_rainfall_in_a_day": 42.8,
+      "rainy_days": 15
+    },
+    {
+      "date": "1998-07-01",
+      "total_rainfall": 259.2,
+      "max_rainfall_in_a_day": 55.8,
+      "rainy_days": 18
+    },
+    {
+      "date": "1998-08-01",
+      "total_rainfall": 195.0,
+      "max_rainfall_in_a_day": 35.5,
+      "rainy_days": 18
+    },
+    {
+      "date": "1998-09-01",
+      "total_rainfall": 258.2,
+      "max_rainfall_in_a_day": 52.0,
+      "rainy_days": 17
+    },
+    {
+      "date": "1998-10-01",
+      "total_rainfall": 222.7,
+      "max_rainfall_in_a_day": 32.4,
+      "rainy_days": 20
+    },
+    {
+      "date": "1998-11-01",
+      "total_rainfall": 107.2,
+      "max_rainfall_in_a_day": 57.5,
+      "rainy_days": 11
+    },
+    {
+      "date": "1998-12-01",
+      "total_rainfall": 463.4,
+      "max_rainfall_in_a_day": 84.4,
+      "rainy_days": 22
+    },
+    {
+      "date": "1999-01-01",
+      "total_rainfall": 193.9,
+      "max_rainfall_in_a_day": 52.5,
+      "rainy_days": 19
+    },
+    {
+      "date": "1999-02-01",
+      "total_rainfall": 67.4,
+      "max_rainfall_in_a_day": 32.1,
+      "rainy_days": 9
+    },
+    {
+      "date": "1999-03-01",
+      "total_rainfall": 181.4,
+      "max_rainfall_in_a_day": 52.4,
+      "rainy_days": 16
+    },
+    {
+      "date": "1999-04-01",
+      "total_rainfall": 88.5,
+      "max_rainfall_in_a_day": 29.2,
+      "rainy_days": 14
+    },
+    {
+      "date": "1999-05-01",
+      "total_rainfall": 157.1,
+      "max_rainfall_in_a_day": 42.8,
+      "rainy_days": 13
+    },
+    {
+      "date": "1999-06-01",
+      "total_rainfall": 103.4,
+      "max_rainfall_in_a_day": 34.5,
+      "rainy_days": 13
+    },
+    {
+      "date": "1999-07-01",
+      "total_rainfall": 225.4,
+      "max_rainfall_in_a_day": 51.4,
+      "rainy_days": 11
+    },
+    {
+      "date": "1999-08-01",
+      "total_rainfall": 204.0,
+      "max_rainfall_in_a_day": 42.4,
+      "rainy_days": 13
+    },
+    {
+      "date": "1999-09-01",
+      "total_rainfall": 125.9,
+      "max_rainfall_in_a_day": 41.5,
+      "rainy_days": 13
+    },
+    {
+      "date": "1999-10-01",
+      "total_rainfall": 205.0,
+      "max_rainfall_in_a_day": 32.8,
+      "rainy_days": 20
+    },
+    {
+      "date": "1999-11-01",
+      "total_rainfall": 241.5,
+      "max_rainfall_in_a_day": 39.0,
+      "rainy_days": 19
+    },
+    {
+      "date": "1999-12-01",
+      "total_rainfall": 340.5,
+      "max_rainfall_in_a_day": 76.9,
+      "rainy_days": 17
+    },
+    {
+      "date": "2000-01-01",
+      "total_rainfall": 275.2,
+      "max_rainfall_in_a_day": 127.6,
+      "rainy_days": 14
+    },
+    {
+      "date": "2000-02-01",
+      "total_rainfall": 237.8,
+      "max_rainfall_in_a_day": 39.9,
+      "rainy_days": 18
+    },
+    {
+      "date": "2000-03-01",
+      "total_rainfall": 238.3,
+      "max_rainfall_in_a_day": 37.9,
+      "rainy_days": 15
+    },
+    {
+      "date": "2000-04-01",
+      "total_rainfall": 311.6,
+      "max_rainfall_in_a_day": 87.4,
+      "rainy_days": 20
+    },
+    {
+      "date": "2000-05-01",
+      "total_rainfall": 96.8,
+      "max_rainfall_in_a_day": 36.7,
+      "rainy_days": 10
+    },
+    {
+      "date": "2000-06-01",
+      "total_rainfall": 157.5,
+      "max_rainfall_in_a_day": 41.7,
+      "rainy_days": 16
+    },
+    {
+      "date": "2000-07-01",
+      "total_rainfall": 116.1,
+      "max_rainfall_in_a_day": 34.6,
+      "rainy_days": 12
+    },
+    {
+      "date": "2000-08-01",
+      "total_rainfall": 113.5,
+      "max_rainfall_in_a_day": 28.1,
+      "rainy_days": 18
+    },
+    {
+      "date": "2000-09-01",
+      "total_rainfall": 81.1,
+      "max_rainfall_in_a_day": 25.7,
+      "rainy_days": 12
+    },
+    {
+      "date": "2000-10-01",
+      "total_rainfall": 120.9,
+      "max_rainfall_in_a_day": 38.3,
+      "rainy_days": 14
+    },
+    {
+      "date": "2000-11-01",
+      "total_rainfall": 385.7,
+      "max_rainfall_in_a_day": 72.0,
+      "rainy_days": 21
+    },
+    {
+      "date": "2000-12-01",
+      "total_rainfall": 236.0,
+      "max_rainfall_in_a_day": 45.8,
+      "rainy_days": 18
+    },
+    {
+      "date": "2001-01-01",
+      "total_rainfall": 425.8,
+      "max_rainfall_in_a_day": 125.4,
+      "rainy_days": 21
+    },
+    {
+      "date": "2001-02-01",
+      "total_rainfall": 86.6,
+      "max_rainfall_in_a_day": 28.2,
+      "rainy_days": 11
+    },
+    {
+      "date": "2001-03-01",
+      "total_rainfall": 297.3,
+      "max_rainfall_in_a_day": 41.1,
+      "rainy_days": 20
+    },
+    {
+      "date": "2001-04-01",
+      "total_rainfall": 203.3,
+      "max_rainfall_in_a_day": 68.9,
+      "rainy_days": 18
+    },
+    {
+      "date": "2001-05-01",
+      "total_rainfall": 164.9,
+      "max_rainfall_in_a_day": 56.1,
+      "rainy_days": 12
+    },
+    {
+      "date": "2001-06-01",
+      "total_rainfall": 137.1,
+      "max_rainfall_in_a_day": 49.6,
+      "rainy_days": 11
+    },
+    {
+      "date": "2001-07-01",
+      "total_rainfall": 111.3,
+      "max_rainfall_in_a_day": 44.8,
+      "rainy_days": 9
+    },
+    {
+      "date": "2001-08-01",
+      "total_rainfall": 158.3,
+      "max_rainfall_in_a_day": 36.6,
+      "rainy_days": 14
+    },
+    {
+      "date": "2001-09-01",
+      "total_rainfall": 162.0,
+      "max_rainfall_in_a_day": 74.3,
+      "rainy_days": 13
+    },
+    {
+      "date": "2001-10-01",
+      "total_rainfall": 252.2,
+      "max_rainfall_in_a_day": 77.2,
+      "rainy_days": 20
+    },
+    {
+      "date": "2001-11-01",
+      "total_rainfall": 175.3,
+      "max_rainfall_in_a_day": 102.6,
+      "rainy_days": 15
+    },
+    {
+      "date": "2001-12-01",
+      "total_rainfall": 609.0,
+      "max_rainfall_in_a_day": 211.1,
+      "rainy_days": 20
+    },
+    {
+      "date": "2002-01-01",
+      "total_rainfall": 221.2,
+      "max_rainfall_in_a_day": 83.8,
+      "rainy_days": 11
+    },
+    {
+      "date": "2002-02-01",
+      "total_rainfall": 50.8,
+      "max_rainfall_in_a_day": 41.7,
+      "rainy_days": 2
+    },
+    {
+      "date": "2002-03-01",
+      "total_rainfall": 55.6,
+      "max_rainfall_in_a_day": 26.4,
+      "rainy_days": 8
+    },
+    {
+      "date": "2002-04-01",
+      "total_rainfall": 116.5,
+      "max_rainfall_in_a_day": 39.4,
+      "rainy_days": 13
+    },
+    {
+      "date": "2002-05-01",
+      "total_rainfall": 236.6,
+      "max_rainfall_in_a_day": 75.9,
+      "rainy_days": 13
+    },
+    {
+      "date": "2002-06-01",
+      "total_rainfall": 83.1,
+      "max_rainfall_in_a_day": 45.8,
+      "rainy_days": 12
+    },
+    {
+      "date": "2002-07-01",
+      "total_rainfall": 233.7,
+      "max_rainfall_in_a_day": 69.5,
+      "rainy_days": 11
+    },
+    {
+      "date": "2002-08-01",
+      "total_rainfall": 54.2,
+      "max_rainfall_in_a_day": 17.8,
+      "rainy_days": 14
+    },
+    {
+      "date": "2002-09-01",
+      "total_rainfall": 124.2,
+      "max_rainfall_in_a_day": 38.9,
+      "rainy_days": 9
+    },
+    {
+      "date": "2002-10-01",
+      "total_rainfall": 10.8,
+      "max_rainfall_in_a_day": 3.2,
+      "rainy_days": 7
+    },
+    {
+      "date": "2002-11-01",
+      "total_rainfall": 307.2,
+      "max_rainfall_in_a_day": 84.0,
+      "rainy_days": 15
+    },
+    {
+      "date": "2002-12-01",
+      "total_rainfall": 255.0,
+      "max_rainfall_in_a_day": 38.6,
+      "rainy_days": 24
+    },
+    {
+      "date": "2003-01-01",
+      "total_rainfall": 444.2,
+      "max_rainfall_in_a_day": 194.4,
+      "rainy_days": 20
+    },
+    {
+      "date": "2003-02-01",
+      "total_rainfall": 172.9,
+      "max_rainfall_in_a_day": 82.2,
+      "rainy_days": 13
+    },
+    {
+      "date": "2003-03-01",
+      "total_rainfall": 154.6,
+      "max_rainfall_in_a_day": 38.3,
+      "rainy_days": 11
+    },
+    {
+      "date": "2003-04-01",
+      "total_rainfall": 159.9,
+      "max_rainfall_in_a_day": 42.9,
+      "rainy_days": 20
+    },
+    {
+      "date": "2003-05-01",
+      "total_rainfall": 81.8,
+      "max_rainfall_in_a_day": 33.0,
+      "rainy_days": 11
+    },
+    {
+      "date": "2003-06-01",
+      "total_rainfall": 50.3,
+      "max_rainfall_in_a_day": 23.2,
+      "rainy_days": 12
+    },
+    {
+      "date": "2003-07-01",
+      "total_rainfall": 170.4,
+      "max_rainfall_in_a_day": 30.9,
+      "rainy_days": 14
+    },
+    {
+      "date": "2003-08-01",
+      "total_rainfall": 193.6,
+      "max_rainfall_in_a_day": 64.4,
+      "rainy_days": 13
+    },
+    {
+      "date": "2003-09-01",
+      "total_rainfall": 205.3,
+      "max_rainfall_in_a_day": 60.0,
+      "rainy_days": 15
+    },
+    {
+      "date": "2003-10-01",
+      "total_rainfall": 351.4,
+      "max_rainfall_in_a_day": 56.6,
+      "rainy_days": 21
+    },
+    {
+      "date": "2003-11-01",
+      "total_rainfall": 133.8,
+      "max_rainfall_in_a_day": 41.3,
+      "rainy_days": 19
+    },
+    {
+      "date": "2003-12-01",
+      "total_rainfall": 273.0,
+      "max_rainfall_in_a_day": 92.1,
+      "rainy_days": 17
+    },
+    {
+      "date": "2004-01-01",
+      "total_rainfall": 600.9,
+      "max_rainfall_in_a_day": 177.8,
+      "rainy_days": 13
+    },
+    {
+      "date": "2004-02-01",
+      "total_rainfall": 31.9,
+      "max_rainfall_in_a_day": 19.2,
+      "rainy_days": 4
+    },
+    {
+      "date": "2004-03-01",
+      "total_rainfall": 269.4,
+      "max_rainfall_in_a_day": 122.8,
+      "rainy_days": 16
+    },
+    {
+      "date": "2004-04-01",
+      "total_rainfall": 57.1,
+      "max_rainfall_in_a_day": 18.1,
+      "rainy_days": 9
+    },
+    {
+      "date": "2004-05-01",
+      "total_rainfall": 137.6,
+      "max_rainfall_in_a_day": 73.4,
+      "rainy_days": 13
+    },
+    {
+      "date": "2004-06-01",
+      "total_rainfall": 127.2,
+      "max_rainfall_in_a_day": 68.1,
+      "rainy_days": 8
+    },
+    {
+      "date": "2004-07-01",
+      "total_rainfall": 166.6,
+      "max_rainfall_in_a_day": 34.3,
+      "rainy_days": 20
+    },
+    {
+      "date": "2004-08-01",
+      "total_rainfall": 185.2,
+      "max_rainfall_in_a_day": 111.5,
+      "rainy_days": 8
+    },
+    {
+      "date": "2004-09-01",
+      "total_rainfall": 128.9,
+      "max_rainfall_in_a_day": 29.1,
+      "rainy_days": 14
+    },
+    {
+      "date": "2004-10-01",
+      "total_rainfall": 125.6,
+      "max_rainfall_in_a_day": 25.3,
+      "rainy_days": 13
+    },
+    {
+      "date": "2004-11-01",
+      "total_rainfall": 166.2,
+      "max_rainfall_in_a_day": 62.4,
+      "rainy_days": 15
+    },
+    {
+      "date": "2004-12-01",
+      "total_rainfall": 139.8,
+      "max_rainfall_in_a_day": 36.4,
+      "rainy_days": 14
+    },
+    {
+      "date": "2005-01-01",
+      "total_rainfall": 163.2,
+      "max_rainfall_in_a_day": 96.7,
+      "rainy_days": 8
+    },
+    {
+      "date": "2005-02-01",
+      "total_rainfall": 8.4,
+      "max_rainfall_in_a_day": 7.2,
+      "rainy_days": 3
+    },
+    {
+      "date": "2005-03-01",
+      "total_rainfall": 82.4,
+      "max_rainfall_in_a_day": 20.5,
+      "rainy_days": 12
+    },
+    {
+      "date": "2005-04-01",
+      "total_rainfall": 81.7,
+      "max_rainfall_in_a_day": 49.6,
+      "rainy_days": 10
+    },
+    {
+      "date": "2005-05-01",
+      "total_rainfall": 331.1,
+      "max_rainfall_in_a_day": 58.7,
+      "rainy_days": 20
+    },
+    {
+      "date": "2005-06-01",
+      "total_rainfall": 82.3,
+      "max_rainfall_in_a_day": 27.6,
+      "rainy_days": 15
+    },
+    {
+      "date": "2005-07-01",
+      "total_rainfall": 104.0,
+      "max_rainfall_in_a_day": 26.3,
+      "rainy_days": 15
+    },
+    {
+      "date": "2005-08-01",
+      "total_rainfall": 58.5,
+      "max_rainfall_in_a_day": 13.8,
+      "rainy_days": 13
+    },
+    {
+      "date": "2005-09-01",
+      "total_rainfall": 175.7,
+      "max_rainfall_in_a_day": 43.4,
+      "rainy_days": 18
+    },
+    {
+      "date": "2005-10-01",
+      "total_rainfall": 314.5,
+      "max_rainfall_in_a_day": 76.2,
+      "rainy_days": 19
+    },
+    {
+      "date": "2005-11-01",
+      "total_rainfall": 362.9,
+      "max_rainfall_in_a_day": 133.8,
+      "rainy_days": 23
+    },
+    {
+      "date": "2005-12-01",
+      "total_rainfall": 166.0,
+      "max_rainfall_in_a_day": 47.3,
+      "rainy_days": 19
+    },
+    {
+      "date": "2006-01-01",
+      "total_rainfall": 454.4,
+      "max_rainfall_in_a_day": 131.7,
+      "rainy_days": 20
+    },
+    {
+      "date": "2006-02-01",
+      "total_rainfall": 115.5,
+      "max_rainfall_in_a_day": 44.5,
+      "rainy_days": 8
+    },
+    {
+      "date": "2006-03-01",
+      "total_rainfall": 83.1,
+      "max_rainfall_in_a_day": 35.7,
+      "rainy_days": 9
+    },
+    {
+      "date": "2006-04-01",
+      "total_rainfall": 239.8,
+      "max_rainfall_in_a_day": 43.3,
+      "rainy_days": 18
+    },
+    {
+      "date": "2006-05-01",
+      "total_rainfall": 205.7,
+      "max_rainfall_in_a_day": 36.6,
+      "rainy_days": 14
+    },
+    {
+      "date": "2006-06-01",
+      "total_rainfall": 236.8,
+      "max_rainfall_in_a_day": 37.3,
+      "rainy_days": 16
+    },
+    {
+      "date": "2006-07-01",
+      "total_rainfall": 153.8,
+      "max_rainfall_in_a_day": 54.8,
+      "rainy_days": 15
+    },
+    {
+      "date": "2006-08-01",
+      "total_rainfall": 127.3,
+      "max_rainfall_in_a_day": 30.4,
+      "rainy_days": 14
+    },
+    {
+      "date": "2006-09-01",
+      "total_rainfall": 83.3,
+      "max_rainfall_in_a_day": 32.2,
+      "rainy_days": 12
+    },
+    {
+      "date": "2006-10-01",
+      "total_rainfall": 102.0,
+      "max_rainfall_in_a_day": 37.8,
+      "rainy_days": 8
+    },
+    {
+      "date": "2006-11-01",
+      "total_rainfall": 185.6,
+      "max_rainfall_in_a_day": 64.0,
+      "rainy_days": 18
+    },
+    {
+      "date": "2006-12-01",
+      "total_rainfall": 765.9,
+      "max_rainfall_in_a_day": 198.0,
+      "rainy_days": 22
+    },
+    {
+      "date": "2007-01-01",
+      "total_rainfall": 450.1,
+      "max_rainfall_in_a_day": 143.8,
+      "rainy_days": 20
+    },
+    {
+      "date": "2007-02-01",
+      "total_rainfall": 105.5,
+      "max_rainfall_in_a_day": 51.4,
+      "rainy_days": 3
+    },
+    {
+      "date": "2007-03-01",
+      "total_rainfall": 269.1,
+      "max_rainfall_in_a_day": 68.8,
+      "rainy_days": 21
+    },
+    {
+      "date": "2007-04-01",
+      "total_rainfall": 240.2,
+      "max_rainfall_in_a_day": 102.4,
+      "rainy_days": 14
+    },
+    {
+      "date": "2007-05-01",
+      "total_rainfall": 127.2,
+      "max_rainfall_in_a_day": 21.9,
+      "rainy_days": 16
+    },
+    {
+      "date": "2007-06-01",
+      "total_rainfall": 139.0,
+      "max_rainfall_in_a_day": 38.0,
+      "rainy_days": 12
+    },
+    {
+      "date": "2007-07-01",
+      "total_rainfall": 141.7,
+      "max_rainfall_in_a_day": 23.0,
+      "rainy_days": 19
+    },
+    {
+      "date": "2007-08-01",
+      "total_rainfall": 190.7,
+      "max_rainfall_in_a_day": 55.9,
+      "rainy_days": 20
+    },
+    {
+      "date": "2007-09-01",
+      "total_rainfall": 149.0,
+      "max_rainfall_in_a_day": 52.1,
+      "rainy_days": 13
+    },
+    {
+      "date": "2007-10-01",
+      "total_rainfall": 237.2,
+      "max_rainfall_in_a_day": 51.8,
+      "rainy_days": 16
+    },
+    {
+      "date": "2007-11-01",
+      "total_rainfall": 367.9,
+      "max_rainfall_in_a_day": 60.1,
+      "rainy_days": 21
+    },
+    {
+      "date": "2007-12-01",
+      "total_rainfall": 468.6,
+      "max_rainfall_in_a_day": 159.0,
+      "rainy_days": 20
+    },
+    {
+      "date": "2008-01-01",
+      "total_rainfall": 262.6,
+      "max_rainfall_in_a_day": 123.1,
+      "rainy_days": 19
+    },
+    {
+      "date": "2008-02-01",
+      "total_rainfall": 129.2,
+      "max_rainfall_in_a_day": 48.5,
+      "rainy_days": 8
+    },
+    {
+      "date": "2008-03-01",
+      "total_rainfall": 294.1,
+      "max_rainfall_in_a_day": 48.1,
+      "rainy_days": 16
+    },
+    {
+      "date": "2008-04-01",
+      "total_rainfall": 87.2,
+      "max_rainfall_in_a_day": 34.2,
+      "rainy_days": 13
+    },
+    {
+      "date": "2008-05-01",
+      "total_rainfall": 124.9,
+      "max_rainfall_in_a_day": 42.3,
+      "rainy_days": 11
+    },
+    {
+      "date": "2008-06-01",
+      "total_rainfall": 118.3,
+      "max_rainfall_in_a_day": 45.2,
+      "rainy_days": 12
+    },
+    {
+      "date": "2008-07-01",
+      "total_rainfall": 89.1,
+      "max_rainfall_in_a_day": 23.5,
+      "rainy_days": 15
+    },
+    {
+      "date": "2008-08-01",
+      "total_rainfall": 327.3,
+      "max_rainfall_in_a_day": 133.9,
+      "rainy_days": 18
+    },
+    {
+      "date": "2008-09-01",
+      "total_rainfall": 164.4,
+      "max_rainfall_in_a_day": 43.5,
+      "rainy_days": 18
+    },
+    {
+      "date": "2008-10-01",
+      "total_rainfall": 159.5,
+      "max_rainfall_in_a_day": 41.6,
+      "rainy_days": 19
+    },
+    {
+      "date": "2008-11-01",
+      "total_rainfall": 324.3,
+      "max_rainfall_in_a_day": 63.3,
+      "rainy_days": 16
+    },
+    {
+      "date": "2008-12-01",
+      "total_rainfall": 244.2,
+      "max_rainfall_in_a_day": 52.0,
+      "rainy_days": 17
+    },
+    {
+      "date": "2009-01-01",
+      "total_rainfall": 38.3,
+      "max_rainfall_in_a_day": 36.0,
+      "rainy_days": 5
+    },
+    {
+      "date": "2009-02-01",
+      "total_rainfall": 201.8,
+      "max_rainfall_in_a_day": 74.2,
+      "rainy_days": 8
+    },
+    {
+      "date": "2009-03-01",
+      "total_rainfall": 223.3,
+      "max_rainfall_in_a_day": 56.3,
+      "rainy_days": 19
+    },
+    {
+      "date": "2009-04-01",
+      "total_rainfall": 183.7,
+      "max_rainfall_in_a_day": 86.6,
+      "rainy_days": 12
+    },
+    {
+      "date": "2009-05-01",
+      "total_rainfall": 198.6,
+      "max_rainfall_in_a_day": 41.3,
+      "rainy_days": 17
+    },
+    {
+      "date": "2009-06-01",
+      "total_rainfall": 21.8,
+      "max_rainfall_in_a_day": 5.8,
+      "rainy_days": 8
+    },
+    {
+      "date": "2009-07-01",
+      "total_rainfall": 161.0,
+      "max_rainfall_in_a_day": 24.4,
+      "rainy_days": 16
+    },
+    {
+      "date": "2009-08-01",
+      "total_rainfall": 177.8,
+      "max_rainfall_in_a_day": 35.5,
+      "rainy_days": 12
+    },
+    {
+      "date": "2009-09-01",
+      "total_rainfall": 109.6,
+      "max_rainfall_in_a_day": 63.0,
+      "rainy_days": 13
+    },
+    {
+      "date": "2009-10-01",
+      "total_rainfall": 133.4,
+      "max_rainfall_in_a_day": 38.4,
+      "rainy_days": 15
+    },
+    {
+      "date": "2009-11-01",
+      "total_rainfall": 281.8,
+      "max_rainfall_in_a_day": 61.4,
+      "rainy_days": 23
+    },
+    {
+      "date": "2009-12-01",
+      "total_rainfall": 189.8,
+      "max_rainfall_in_a_day": 42.6,
+      "rainy_days": 18
+    },
+    {
+      "date": "2010-01-01",
+      "total_rainfall": 69.5,
+      "max_rainfall_in_a_day": 24.5,
+      "rainy_days": 10
+    },
+    {
+      "date": "2010-02-01",
+      "total_rainfall": 6.3,
+      "max_rainfall_in_a_day": 2.9,
+      "rainy_days": 4
+    },
+    {
+      "date": "2010-03-01",
+      "total_rainfall": 238.0,
+      "max_rainfall_in_a_day": 57.6,
+      "rainy_days": 11
+    },
+    {
+      "date": "2010-04-01",
+      "total_rainfall": 158.5,
+      "max_rainfall_in_a_day": 40.0,
+      "rainy_days": 18
+    },
+    {
+      "date": "2010-05-01",
+      "total_rainfall": 157.5,
+      "max_rainfall_in_a_day": 90.5,
+      "rainy_days": 17
+    },
+    {
+      "date": "2010-06-01",
+      "total_rainfall": 240.5,
+      "max_rainfall_in_a_day": 43.0,
+      "rainy_days": 19
+    },
+    {
+      "date": "2010-07-01",
+      "total_rainfall": 298.5,
+      "max_rainfall_in_a_day": 121.1,
+      "rainy_days": 18
+    },
+    {
+      "date": "2010-08-01",
+      "total_rainfall": 158.4,
+      "max_rainfall_in_a_day": 60.2,
+      "rainy_days": 16
+    },
+    {
+      "date": "2010-09-01",
+      "total_rainfall": 121.5,
+      "max_rainfall_in_a_day": 28.0,
+      "rainy_days": 13
+    },
+    {
+      "date": "2010-10-01",
+      "total_rainfall": 166.2,
+      "max_rainfall_in_a_day": 58.1,
+      "rainy_days": 17
+    },
+    {
+      "date": "2010-11-01",
+      "total_rainfall": 278.8,
+      "max_rainfall_in_a_day": 41.6,
+      "rainy_days": 21
+    },
+    {
+      "date": "2010-12-01",
+      "total_rainfall": 181.4,
+      "max_rainfall_in_a_day": 85.8,
+      "rainy_days": 14
+    },
+    {
+      "date": "2011-01-01",
+      "total_rainfall": 513.2,
+      "max_rainfall_in_a_day": 216.2,
+      "rainy_days": 17
+    },
+    {
+      "date": "2011-02-01",
+      "total_rainfall": 23.0,
+      "max_rainfall_in_a_day": 17.4,
+      "rainy_days": 8
+    },
+    {
+      "date": "2011-03-01",
+      "total_rainfall": 256.6,
+      "max_rainfall_in_a_day": 54.0,
+      "rainy_days": 22
+    },
+    {
+      "date": "2011-04-01",
+      "total_rainfall": 217.8,
+      "max_rainfall_in_a_day": 61.8,
+      "rainy_days": 12
+    },
+    {
+      "date": "2011-05-01",
+      "total_rainfall": 127.0,
+      "max_rainfall_in_a_day": 34.2,
+      "rainy_days": 15
+    },
+    {
+      "date": "2011-06-01",
+      "total_rainfall": 213.0,
+      "max_rainfall_in_a_day": 82.0,
+      "rainy_days": 15
+    },
+    {
+      "date": "2011-07-01",
+      "total_rainfall": 76.6,
+      "max_rainfall_in_a_day": 30.0,
+      "rainy_days": 7
+    },
+    {
+      "date": "2011-08-01",
+      "total_rainfall": 81.4,
+      "max_rainfall_in_a_day": 30.2,
+      "rainy_days": 13
+    },
+    {
+      "date": "2011-09-01",
+      "total_rainfall": 136.4,
+      "max_rainfall_in_a_day": 40.4,
+      "rainy_days": 14
+    },
+    {
+      "date": "2011-10-01",
+      "total_rainfall": 216.8,
+      "max_rainfall_in_a_day": 54.0,
+      "rainy_days": 20
+    },
+    {
+      "date": "2011-11-01",
+      "total_rainfall": 377.8,
+      "max_rainfall_in_a_day": 78.6,
+      "rainy_days": 24
+    },
+    {
+      "date": "2011-12-01",
+      "total_rainfall": 284.6,
+      "max_rainfall_in_a_day": 87.4,
+      "rainy_days": 21
+    },
+    {
+      "date": "2012-01-01",
+      "total_rainfall": 106.1,
+      "max_rainfall_in_a_day": 26.2,
+      "rainy_days": 16
+    },
+    {
+      "date": "2012-02-01",
+      "total_rainfall": 83.6,
+      "max_rainfall_in_a_day": 38.4,
+      "rainy_days": 11
+    },
+    {
+      "date": "2012-03-01",
+      "total_rainfall": 313.4,
+      "max_rainfall_in_a_day": 92.3,
+      "rainy_days": 21
+    },
+    {
+      "date": "2012-04-01",
+      "total_rainfall": 260.6,
+      "max_rainfall_in_a_day": 48.4,
+      "rainy_days": 20
+    },
+    {
+      "date": "2012-05-01",
+      "total_rainfall": 292.0,
+      "max_rainfall_in_a_day": 79.2,
+      "rainy_days": 19
+    },
+    {
+      "date": "2012-06-01",
+      "total_rainfall": 53.0,
+      "max_rainfall_in_a_day": 38.2,
+      "rainy_days": 8
+    },
+    {
+      "date": "2012-07-01",
+      "total_rainfall": 130.8,
+      "max_rainfall_in_a_day": 35.4,
+      "rainy_days": 17
+    },
+    {
+      "date": "2012-08-01",
+      "total_rainfall": 119.0,
+      "max_rainfall_in_a_day": 31.0,
+      "rainy_days": 12
+    },
+    {
+      "date": "2012-09-01",
+      "total_rainfall": 107.6,
+      "max_rainfall_in_a_day": 35.8,
+      "rainy_days": 10
+    },
+    {
+      "date": "2012-10-01",
+      "total_rainfall": 122.2,
+      "max_rainfall_in_a_day": 22.6,
+      "rainy_days": 13
+    },
+    {
+      "date": "2012-11-01",
+      "total_rainfall": 208.2,
+      "max_rainfall_in_a_day": 49.2,
+      "rainy_days": 22
+    },
+    {
+      "date": "2012-12-01",
+      "total_rainfall": 363.4,
+      "max_rainfall_in_a_day": 78.8,
+      "rainy_days": 22
+    },
+    {
+      "date": "2013-01-01",
+      "total_rainfall": 262.0,
+      "max_rainfall_in_a_day": 73.0,
+      "rainy_days": 15
+    },
+    {
+      "date": "2013-02-01",
+      "total_rainfall": 395.2,
+      "max_rainfall_in_a_day": 95.2,
+      "rainy_days": 22
+    },
+    {
+      "date": "2013-03-01",
+      "total_rainfall": 85.8,
+      "max_rainfall_in_a_day": 29.6,
+      "rainy_days": 10
+    },
+    {
+      "date": "2013-04-01",
+      "total_rainfall": 159.4,
+      "max_rainfall_in_a_day": 41.6,
+      "rainy_days": 19
+    },
+    {
+      "date": "2013-05-01",
+      "total_rainfall": 211.4,
+      "max_rainfall_in_a_day": 46.2,
+      "rainy_days": 17
+    },
+    {
+      "date": "2013-06-01",
+      "total_rainfall": 111.4,
+      "max_rainfall_in_a_day": 22.4,
+      "rainy_days": 12
+    },
+    {
+      "date": "2013-07-01",
+      "total_rainfall": 174.6,
+      "max_rainfall_in_a_day": 37.4,
+      "rainy_days": 15
+    },
+    {
+      "date": "2013-08-01",
+      "total_rainfall": 165.6,
+      "max_rainfall_in_a_day": 43.2,
+      "rainy_days": 15
+    },
+    {
+      "date": "2013-09-01",
+      "total_rainfall": 257.0,
+      "max_rainfall_in_a_day": 52.6,
+      "rainy_days": 19
+    },
+    {
+      "date": "2013-10-01",
+      "total_rainfall": 285.4,
+      "max_rainfall_in_a_day": 139.8,
+      "rainy_days": 19
+    },
+    {
+      "date": "2013-11-01",
+      "total_rainfall": 292.4,
+      "max_rainfall_in_a_day": 44.0,
+      "rainy_days": 22
+    },
+    {
+      "date": "2013-12-01",
+      "total_rainfall": 348.2,
+      "max_rainfall_in_a_day": 119.8,
+      "rainy_days": 21
+    },
+    {
+      "date": "2014-01-01",
+      "total_rainfall": 75.4,
+      "max_rainfall_in_a_day": 31.2,
+      "rainy_days": 5
+    },
+    {
+      "date": "2014-02-01",
+      "total_rainfall": 0.2,
+      "max_rainfall_in_a_day": 0.2,
+      "rainy_days": 1
+    },
+    {
+      "date": "2014-03-01",
+      "total_rainfall": 66.0,
+      "max_rainfall_in_a_day": 52.6,
+      "rainy_days": 6
+    },
+    {
+      "date": "2014-04-01",
+      "total_rainfall": 110.0,
+      "max_rainfall_in_a_day": 28.8,
+      "rainy_days": 17
+    },
+    {
+      "date": "2014-05-01",
+      "total_rainfall": 125.8,
+      "max_rainfall_in_a_day": 22.2,
+      "rainy_days": 18
+    },
+    {
+      "date": "2014-06-01",
+      "total_rainfall": 71.4,
+      "max_rainfall_in_a_day": 18.8,
+      "rainy_days": 11
+    },
+    {
+      "date": "2014-07-01",
+      "total_rainfall": 148.6,
+      "max_rainfall_in_a_day": 29.0,
+      "rainy_days": 15
+    },
+    {
+      "date": "2014-08-01",
+      "total_rainfall": 241.0,
+      "max_rainfall_in_a_day": 44.2,
+      "rainy_days": 20
+    },
+    {
+      "date": "2014-09-01",
+      "total_rainfall": 83.6,
+      "max_rainfall_in_a_day": 34.6,
+      "rainy_days": 9
+    },
+    {
+      "date": "2014-10-01",
+      "total_rainfall": 120.0,
+      "max_rainfall_in_a_day": 32.8,
+      "rainy_days": 10
+    },
+    {
+      "date": "2014-11-01",
+      "total_rainfall": 250.8,
+      "max_rainfall_in_a_day": 64.4,
+      "rainy_days": 23
+    },
+    {
+      "date": "2014-12-01",
+      "total_rainfall": 245.6,
+      "max_rainfall_in_a_day": 48.2,
+      "rainy_days": 17
+    },
+    {
+      "date": "2015-01-01",
+      "total_rainfall": 79.6,
+      "max_rainfall_in_a_day": 33.6,
+      "rainy_days": 6
+    },
+    {
+      "date": "2015-02-01",
+      "total_rainfall": 18.8,
+      "max_rainfall_in_a_day": 10.8,
+      "rainy_days": 6
+    },
+    {
+      "date": "2015-03-01",
+      "total_rainfall": 84.4,
+      "max_rainfall_in_a_day": 46.0,
+      "rainy_days": 5
+    },
+    {
+      "date": "2015-04-01",
+      "total_rainfall": 73.2,
+      "max_rainfall_in_a_day": 18.8,
+      "rainy_days": 13
+    },
+    {
+      "date": "2015-05-01",
+      "total_rainfall": 89.0,
+      "max_rainfall_in_a_day": 22.2,
+      "rainy_days": 12
+    },
+    {
+      "date": "2015-06-01",
+      "total_rainfall": 95.8,
+      "max_rainfall_in_a_day": 28.4,
+      "rainy_days": 10
+    },
+    {
+      "date": "2015-07-01",
+      "total_rainfall": 116.8,
+      "max_rainfall_in_a_day": 45.8,
+      "rainy_days": 13
+    },
+    {
+      "date": "2015-08-01",
+      "total_rainfall": 185.8,
+      "max_rainfall_in_a_day": 63.2,
+      "rainy_days": 11
+    },
+    {
+      "date": "2015-09-01",
+      "total_rainfall": 61.6,
+      "max_rainfall_in_a_day": 18.4,
+      "rainy_days": 8
+    },
+    {
+      "date": "2015-10-01",
+      "total_rainfall": 87.2,
+      "max_rainfall_in_a_day": 28.6,
+      "rainy_days": 9
+    },
+    {
+      "date": "2015-11-01",
+      "total_rainfall": 72.6,
+      "max_rainfall_in_a_day": 25.8,
+      "rainy_days": 13
+    },
+    {
+      "date": "2015-12-01",
+      "total_rainfall": 302.3,
+      "max_rainfall_in_a_day": 40.4,
+      "rainy_days": 19
+    },
+    {
+      "date": "2016-01-01",
+      "total_rainfall": 126.6,
+      "max_rainfall_in_a_day": 39.6,
+      "rainy_days": 15
+    },
+    {
+      "date": "2016-02-01",
+      "total_rainfall": 186.0,
+      "max_rainfall_in_a_day": 71.8,
+      "rainy_days": 10
+    },
+    {
+      "date": "2016-03-01",
+      "total_rainfall": 6.2,
+      "max_rainfall_in_a_day": 2.4,
+      "rainy_days": 6
+    },
+    {
+      "date": "2016-04-01",
+      "total_rainfall": 89.8,
+      "max_rainfall_in_a_day": 18.2,
+      "rainy_days": 14
+    },
+    {
+      "date": "2016-05-01",
+      "total_rainfall": 193.8,
+      "max_rainfall_in_a_day": 54.8,
+      "rainy_days": 12
+    },
+    {
+      "date": "2016-06-01",
+      "total_rainfall": 162.8,
+      "max_rainfall_in_a_day": 67.8,
+      "rainy_days": 13
+    },
+    {
+      "date": "2016-07-01",
+      "total_rainfall": 168.6,
+      "max_rainfall_in_a_day": 59.4,
+      "rainy_days": 20
+    },
+    {
+      "date": "2016-08-01",
+      "total_rainfall": 139.2,
+      "max_rainfall_in_a_day": 30.6,
+      "rainy_days": 15
+    },
+    {
+      "date": "2016-09-01",
+      "total_rainfall": 118.9,
+      "max_rainfall_in_a_day": 34.0,
+      "rainy_days": 15
+    },
+    {
+      "date": "2016-10-01",
+      "total_rainfall": 181.0,
+      "max_rainfall_in_a_day": 75.4,
+      "rainy_days": 16
+    },
+    {
+      "date": "2016-11-01",
+      "total_rainfall": 290.2,
+      "max_rainfall_in_a_day": 65.6,
+      "rainy_days": 20
+    },
+    {
+      "date": "2016-12-01",
+      "total_rainfall": 292.6,
+      "max_rainfall_in_a_day": 73.0,
+      "rainy_days": 23
+    },
+    {
+      "date": "2017-01-01",
+      "total_rainfall": 197.6,
+      "max_rainfall_in_a_day": 60.6,
+      "rainy_days": 21
+    },
+    {
+      "date": "2017-02-01",
+      "total_rainfall": 158.4,
+      "max_rainfall_in_a_day": 31.0,
+      "rainy_days": 15
+    },
+    {
+      "date": "2017-03-01",
+      "total_rainfall": 136.2,
+      "max_rainfall_in_a_day": 30.2,
+      "rainy_days": 11
+    },
+    {
+      "date": "2017-04-01",
+      "total_rainfall": 208.6,
+      "max_rainfall_in_a_day": 42.8,
+      "rainy_days": 21
+    },
+    {
+      "date": "2017-05-01",
+      "total_rainfall": 190.0,
+      "max_rainfall_in_a_day": 44.8,
+      "rainy_days": 15
+    },
+    {
+      "date": "2017-06-01",
+      "total_rainfall": 106.0,
+      "max_rainfall_in_a_day": 29.6,
+      "rainy_days": 10
+    },
+    {
+      "date": "2017-07-01",
+      "total_rainfall": 79.6,
+      "max_rainfall_in_a_day": 30.2,
+      "rainy_days": 9
+    },
+    {
+      "date": "2017-08-01",
+      "total_rainfall": 84.2,
+      "max_rainfall_in_a_day": 29.4,
+      "rainy_days": 18
+    },
+    {
+      "date": "2017-09-01",
+      "total_rainfall": 124.4,
+      "max_rainfall_in_a_day": 20.2,
+      "rainy_days": 19
+    },
+    {
+      "date": "2017-10-01",
+      "total_rainfall": 120.8,
+      "max_rainfall_in_a_day": 31.2,
+      "rainy_days": 18
+    },
+    {
+      "date": "2017-11-01",
+      "total_rainfall": 268.6,
+      "max_rainfall_in_a_day": 45.2,
+      "rainy_days": 24
+    },
+    {
+      "date": "2017-12-01",
+      "total_rainfall": 371.2,
+      "max_rainfall_in_a_day": 69.8,
+      "rainy_days": 23
+    },
+    {
+      "date": "2018-01-01",
+      "total_rainfall": 287.0,
+      "max_rainfall_in_a_day": 45.8,
+      "rainy_days": 25
+    },
+    {
+      "date": "2018-02-01",
+      "total_rainfall": 14.8,
+      "max_rainfall_in_a_day": 13.0,
+      "rainy_days": 5
+    },
+    {
+      "date": "2018-03-01",
+      "total_rainfall": 44.6,
+      "max_rainfall_in_a_day": 15.2,
+      "rainy_days": 10
+    },
+    {
+      "date": "2018-04-01",
+      "total_rainfall": 61.2,
+      "max_rainfall_in_a_day": 14.0,
+      "rainy_days": 14
+    },
+    {
+      "date": "2018-05-01",
+      "total_rainfall": 132.2,
+      "max_rainfall_in_a_day": 47.4,
+      "rainy_days": 19
+    },
+    {
+      "date": "2018-06-01",
+      "total_rainfall": 182.6,
+      "max_rainfall_in_a_day": 46.8,
+      "rainy_days": 17
+    },
+    {
+      "date": "2018-07-01",
+      "total_rainfall": 143.2,
+      "max_rainfall_in_a_day": 32.4,
+      "rainy_days": 10
+    },
+    {
+      "date": "2018-08-01",
+      "total_rainfall": 121.6,
+      "max_rainfall_in_a_day": 34.6,
+      "rainy_days": 11
+    },
+    {
+      "date": "2018-09-01",
+      "total_rainfall": 144.4,
+      "max_rainfall_in_a_day": 45.0,
+      "rainy_days": 13
+    },
+    {
+      "date": "2018-10-01",
+      "total_rainfall": 234.4,
+      "max_rainfall_in_a_day": 60.6,
+      "rainy_days": 18
+    },
+    {
+      "date": "2018-11-01",
+      "total_rainfall": 169.6,
+      "max_rainfall_in_a_day": 20.6,
+      "rainy_days": 27
+    },
+    {
+      "date": "2018-12-01",
+      "total_rainfall": 172.6,
+      "max_rainfall_in_a_day": 43.8,
+      "rainy_days": 19
+    },
+    {
+      "date": "2019-01-01",
+      "total_rainfall": 63.6,
+      "max_rainfall_in_a_day": 38.2,
+      "rainy_days": 9
+    },
+    {
+      "date": "2019-02-01",
+      "total_rainfall": 31.6,
+      "max_rainfall_in_a_day": 13.4,
+      "rainy_days": 5
+    },
+    {
+      "date": "2019-03-01",
+      "total_rainfall": 72.2,
+      "max_rainfall_in_a_day": 29.0,
+      "rainy_days": 6
+    },
+    {
+      "date": "2019-04-01",
+      "total_rainfall": 174.8,
+      "max_rainfall_in_a_day": 52.4,
+      "rainy_days": 9
+    },
+    {
+      "date": "2019-05-01",
+      "total_rainfall": 69.0,
+      "max_rainfall_in_a_day": 17.2,
+      "rainy_days": 13
+    },
+    {
+      "date": "2019-06-01",
+      "total_rainfall": 173.8,
+      "max_rainfall_in_a_day": 37.6,
+      "rainy_days": 16
+    },
+    {
+      "date": "2019-07-01",
+      "total_rainfall": 12.2,
+      "max_rainfall_in_a_day": 6.6,
+      "rainy_days": 8
+    },
+    {
+      "date": "2019-08-01",
+      "total_rainfall": 11.8,
+      "max_rainfall_in_a_day": 3.8,
+      "rainy_days": 6
+    },
+    {
+      "date": "2019-09-01",
+      "total_rainfall": 22.8,
+      "max_rainfall_in_a_day": 16.4,
+      "rainy_days": 4
+    },
+    {
+      "date": "2019-10-01",
+      "total_rainfall": 176.8,
+      "max_rainfall_in_a_day": 92.2,
+      "rainy_days": 15
+    },
+    {
+      "date": "2019-11-01",
+      "total_rainfall": 137.4,
+      "max_rainfall_in_a_day": 73.4,
+      "rainy_days": 15
+    },
+    {
+      "date": "2019-12-01",
+      "total_rainfall": 421.5,
+      "max_rainfall_in_a_day": 74.2,
+      "rainy_days": 14
+    },
+    {
+      "date": "2020-01-01",
+      "total_rainfall": 88.4,
+      "max_rainfall_in_a_day": 38.0,
+      "rainy_days": 6
+    },
+    {
+      "date": "2020-02-01",
+      "total_rainfall": 65.0,
+      "max_rainfall_in_a_day": 23.8,
+      "rainy_days": 8
+    },
+    {
+      "date": "2020-03-01",
+      "total_rainfall": 108.8,
+      "max_rainfall_in_a_day": 47.4,
+      "rainy_days": 8
+    },
+    {
+      "date": "2020-04-01",
+      "total_rainfall": 188.0,
+      "max_rainfall_in_a_day": 51.8,
+      "rainy_days": 12
+    },
+    {
+      "date": "2020-05-01",
+      "total_rainfall": 255.6,
+      "max_rainfall_in_a_day": 53.8,
+      "rainy_days": 16
+    },
+    {
+      "date": "2020-06-01",
+      "total_rainfall": 233.8,
+      "max_rainfall_in_a_day": 41.0,
+      "rainy_days": 21
+    }
+  ],
+  "calendar_months": [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ]
+}
