@@ -59,7 +59,7 @@ in a single day for a given month.
 | `rainfall-monthly-highest-daily-total.csv` | `maximum_rainfall_in_a_day` | Highest single-day rainfall in the month (mm) |
 | `rainfall-monthly-number-of-rain-days.csv` | `no_of_rainy_days` | Number of rain days (≥0.2 mm) in the month |
 
-> **Note on granularity:** the source data is aggregated **monthly**, not daily. "Highest
+> **Note on granularity:** the source data is aggregated monthly, not daily. "Highest
 > rainfall in a day for a month" is therefore forecast as the monthly `maximum_rainfall_in_a_day`
 > statistic, not from a true daily-resolution series. See [Known Limitations](#-known-limitations).
 
